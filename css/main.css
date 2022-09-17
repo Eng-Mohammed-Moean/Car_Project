@@ -1,0 +1,638 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    font-size: 16px;
+    --color-mine: #DE0E0B;
+    --color-wight: #FFF;
+    --color-para: #747474;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-image: url("../imges/car\ bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+.hero .header .list {
+    display: flex;
+}
+
+
+.list a {
+    margin-top: .56rem;
+    background-color: #707070;
+    color: var(--color-wight);
+    font-size: 1rem;
+    padding: .6rem;
+
+}
+
+.list p {
+    margin-top: .54rem;
+    background-color: var(--color-mine);
+    padding: 1rem 1.5rem;
+}
+
+.contant {
+    width: 100%;
+    height: 50%;
+    padding: 15rem 5rem;
+
+}
+
+.contant img {
+    margin-left: 1.5rem;
+}
+
+.contant h1 {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--color-wight);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contant p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #ADADAD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contant .last-p {
+    font-size: .8rem;
+    color: var(--color-mine);
+    position: relative;
+    margin-left: 6rem;
+}
+
+.contant .last-p::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: var(--color-mine);
+    left: -90px;
+    top: 5px;
+
+}
+
+/* Mercedes style */
+
+.Mercedes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Mercedes .img-car .main {
+    position: relative;
+    z-index: 1;
+}
+
+.Mercedes .img-car .bac-img-car {
+    position: absolute;
+    left: 5%;
+    top: 120%;
+}
+
+.Mercedes .text-car {
+    margin-top: 12rem;
+}
+
+
+.Mercedes .text-car .first-p-text-car {
+    font-size: .8rem;
+    color: var(--color-mine);
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.Mercedes .text-car .first-p-text-car::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: var(--color-mine);
+    top: 200%;
+
+}
+
+.Mercedes .text-car h2,
+.Interior-text h2,
+.Powertrain-text h2,
+.get-yours-text h1 {
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Mercedes .text-car .last-p-text-car,
+.Interior-text .last-p-Interior-text,
+.get-yours-text p {
+    color: var(--color-para);
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    line-height: 2.5;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Interior style */
+
+.Interior {
+    max-height: 1000px;
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%);
+    flex-wrap: wrap;
+}
+
+.Interior-text {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 5rem;
+}
+
+.Interior-text .first-p-Interior-text {
+    color: var(--color-mine);
+    font-size: .8rem;
+    position: relative;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Interior-text .first-p-Interior-text::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: var(--color-mine);
+    bottom: -15px;
+}
+
+.Interior-text .inside {
+    width: 395px;
+    background-color: var(--color-mine);
+    height: 130px;
+    margin-left: 18rem;
+    display: inline-flex;
+
+}
+
+.inside p {
+    background-color: var(--color-wight);
+    display: inline-flex;
+    padding: .5rem;
+    margin: 3rem 1rem;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.Interior-img {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Interior-img img {
+    width: 100%;
+    height: 160%;
+}
+
+.Interior-color {
+    height: 100%;
+    background-color: #0D0D0D;
+    grid-column: 1/ span 2;
+    grid-row: 2;
+    position: relative;
+
+}
+
+.Interior-color .box {
+    display: inline-flex;
+    background-color: #151515;
+    position: absolute;
+    left: 36%;
+    top: -10%;
+    padding: 1rem;
+
+}
+
+.box .pointer {
+    margin-bottom: 8rem;
+    margin-left: .5rem;
+}
+
+/* Powertrain style */
+
+.Powertrain {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 800px;
+    flex-wrap: wrap;
+}
+
+.Powertrain-img {
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+
+.Powertrain-img .img-there {
+    position: absolute;
+    left: -63%;
+}
+
+.Powertrain-img .img-forth {
+    position: absolute;
+    left: -12%;
+}
+
+.Powertrain-img .img-two {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 52%;
+    left: -13%;
+}
+
+.Powertrain-img .img-one {
+    position: absolute;
+    z-index: 9;
+    left: 35%;
+    top: 20%;
+}
+
+
+
+.Powertrain-text {
+    width: 45%;
+    height: 100%;
+    padding: 5rem;
+}
+
+.first-p-Powertrain-text {
+    font-size: 1rem;
+    color: var(--color-mine);
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.first-p-Powertrain-text::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-mine);
+    top: 35px;
+}
+
+.second-p-Powertrain-text {
+    margin-top: 1.5rem;
+    line-height: 2;
+    color: var(--color-para);
+
+}
+
+.therd-p-Powertrain-text {
+    margin-top: 5rem;
+}
+
+.therd-p-Powertrain-text,
+.forth-p-Powertrain-text {
+    font-size: 1.2rem;
+    color: var(--color-para);
+}
+
+.therd-p-Powertrain-text span,
+.forth-p-Powertrain-text span {
+    color: var(--color-mine);
+    font-weight: bold;
+}
+
+.fifth-p-Powertrain-text {
+    font-size: 1.2rem;
+    color: var(--color-mine);
+    font-weight: bold;
+}
+
+
+
+.button {
+    line-height: 2;
+    position: relative;
+    margin-left: 4.5rem;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--color-mine);
+    top: 20px;
+    left: -70px;
+}
+
+/* get-yours */
+
+.get-yours {
+    display: flex;
+    width: 100%;
+    height: 459px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+    margin-top: -2.3%;
+    background-image: url('../imges/get-yours-img.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.get-yours-text {
+    width: 50%;
+    height: 100%;
+    padding: 10rem 10rem;
+
+}
+
+.get-yours-text p {
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.get-yours-text a {
+    padding: 1rem 2rem;
+    background-color: var(--color-mine);
+    color: var(--color-wight);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.get-yours-box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+}
+
+.box-get-yours {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    background-color: #151515;
+    margin-top: 10rem;
+    padding: 3rem;
+}
+
+.box-get-yours .top {
+    color: var(--color-wight);
+    font-size: 1rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.box-get-yours .top::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: var(--color-wight);
+    top: 30px;
+
+}
+
+.box-get-yours a {
+    padding: .9rem 0;
+    padding-right: .5rem;
+    background-color: var(--color-mine);
+    color: var(--color-wight);
+    font-weight: bold;
+}
+
+.box-get-yours .a-2 {
+    padding-right: 1.3rem;
+}
+
+
+.box-get-yours i {
+    padding: 1rem;
+    background-color: var(--color-wight);
+    margin-right: 1.5rem;
+    align-items: flex-start;
+    color: #000;
+    font-size: 1rem;
+}
+
+/* footer style */
+
+.footer {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    margin: 1rem 10rem;
+
+}
+
+.footer i {
+    color: #ADADAD;
+    font-size: 1.3rem;
+}
+
+/* Responsive */
+
+
+@media (max-width:599.9px) and (min-width:500px) {
+    .contant {
+        padding: 2rem;
+        padding-top: 15rem;
+    }
+
+    .hero .header .logo {
+        margin-left: -4rem;
+    }
+
+
+    .hero .header .list {
+        margin-right: -4rem;
+    }
+
+}
+
+@media (max-width:783.9px) and (min-width:500px) {
+    .bac-img-car {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: -3rem;
+    }
+
+    .text-car {
+        margin-left: 2rem;
+    }
+
+
+}
+
+@media (max-width:1281.9px) and (min-width:784px) {
+    .text-car {
+        margin-left: 5rem;
+    }
+
+}
+
+@media (max-width:1466px) and (min-width:500px) {
+    .Interior-text .inside {
+        display: none;
+    }
+
+}
+
+@media (max-width:1288px) and (min-width:500px) {
+    .Interior-color .box {
+        display: none;
+    }
+
+    .Interior-color {
+        display: none;
+    }
+}
+
+@media (max-width:1199.9px) and (min-width:500px) {
+    .Interior-img {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+
+    .Interior-text {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+        margin-left: -3rem;
+        width: 100%;
+        height: 10%;
+    }
+
+}
+
+
+@media (max-width:1500px) and (min-width:500px) {
+
+    .Powertrain-img,
+    .Powertrain-text {
+        width: 100%;
+    }
+
+    .Powertrain-img .img-there,
+    .Powertrain-img .img-forth {
+        display: none;
+    }
+
+    .Powertrain-img .img-one {
+        left: 10%;
+    }
+
+    .Powertrain-img .img-two {
+        top: 10%;
+        height: 600px;
+
+    }
+
+    .get-yours {
+        margin-top: 35rem;
+    }
+
+
+
+}
+
+@media (min-width:500px) and (max-width:1000px) {
+    .Powertrain-img .img-two {
+        top: 40%;
+
+    }
+}
+
+@media (min-width:500px) and (max-width:1180px) {
+    .get-yours-text {
+        width: 100%;
+
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .get-yours-box {
+        width: 100%;
+        margin-left: 5rem;
+        margin-top: -5rem;
+    }
+
+    .get-yours {
+        margin-top: 45rem;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:555px) {
+    .get-yours-text {
+        padding: 5rem;
+
+    }
+}
+
+@media (max-width:500px) {
+
+    .button {
+        margin-left: -1rem;
+    }
+
+    .button::before {
+        left: -30px;
+        width: 20px;
+    }
+
+}
+
+
+@media (min-width:529.9px) and (max-width:1200px) {
+    .Powertrain-img .img-one {
+        top: 45%;
+    }
+
+    .Powertrain-img .img-two {
+        top: 33%;
+        height: 600px;
+
+    }
+}
